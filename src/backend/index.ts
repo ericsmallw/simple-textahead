@@ -7,7 +7,7 @@ const port = process.env.PORT || 3000;
 
 // Define the CORS options
 const corsOptions = {
-  origin: ['http://127.0.0.1:8000'] // Whitelist the domains you want to allow
+  origin: ['http://127.0.0.1:8000', 'http://localhost:8000'] // Whitelist the domains you want to allow
 };
 
 app.use(cors(corsOptions)); // Use the cors middleware with your options
