@@ -12,7 +12,7 @@ export default class StatesBusinessManager {
     }
 
     public getStates(state_string: string): string[] {
-        return this.statesDao.getStates(state_string).sort();
+        return this.statesDao.getStates(state_string).sort().slice(0, 8);
     }
 
 }
