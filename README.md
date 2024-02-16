@@ -28,7 +28,7 @@ To start the frontend part of the application, open a new terminal/command promp
 
 ```bash
 npm run run-front
-``
+```
 
 ## Viewing the Webpage
 
