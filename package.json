@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run-back": "ts-node-dev src/backend/index.ts",
-    "run-front": "ws --directory src"
+    "start": "ws --directory src",
+    "server": "ts-node src/backend/index.ts"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +16,8 @@
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "inversify": "^6.0.2",
-    "reflect-metadata": "^0.2.1"
+    "reflect-metadata": "^0.2.1",
+    "ts-node": "^10.9.2"
   },
   "devDependencies": {
     "@types/node": "^20.11.18",

@@ -17,7 +17,7 @@ This application consists of two main parts: the backend server and the frontend
 To start the backend server, run the following command from the root directory of the project:
 
 ```bash
-npm run run-back
+npm run server
 ```
 
 This command starts the backend server, which listens for requests on port 3000 by default.
@@ -27,7 +27,7 @@ This command starts the backend server, which listens for requests on port 3000 
 To start the frontend part of the application, open a new terminal/command prompt, navigate to the project's root directory (if you're not already there), and run:
 
 ```bash
-npm run run-front
+npm run start
 ```
 
 ## Viewing the Webpage
