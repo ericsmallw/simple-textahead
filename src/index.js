@@ -22,13 +22,14 @@ $(document).ready(function() {
             // Populate results
             $results.empty();
             $.each(states, function(i, state) {
-                $('<li>').text(state)
-                         .appendTo($results)
-                         .on('click', function() {
-                             $input.val($(this).text());
-                             $results.empty();
-                             $results.hide();
-                         });
+                var itemText = state.replace(new RegExp(state_string, 'gi'), (match) => `<strong>${match}</strong>`);
+                $('<li>').html(itemText)
+                    .appendTo($results)
+                    .on('click', function() {
+                        $input.val($(this).text());
+                        $results.empty();
+                        $results.hide();
+                    });
             });
 
             // Show results

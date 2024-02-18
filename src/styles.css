@@ -1,0 +1,40 @@
+body { 
+    font-family: 'Arial', sans-serif;
+}
+.typeahead-container { 
+    position: relative; 
+    width: 300px; 
+}
+#typeahead { 
+    width: 100%; 
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+}
+.typeahead-results { 
+    position: absolute; 
+    width: calc(100% - 2px);
+    background: white; 
+    border-top: none;
+    z-index: 1000; 
+    box-shadow: 0 4px 6px rgba(0,0,0,.1);
+    max-height: 300px;
+    overflow-y: auto;
+    font-size: 14px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.typeahead-results li { 
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ddd;
+}
+.typeahead-results strong {
+    font-weight: bold;
+}
+.typeahead-results li:last-child {
+    border-bottom: none;
+}
+
